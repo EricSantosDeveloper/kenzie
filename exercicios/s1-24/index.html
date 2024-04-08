@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Kenzie</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" required placeholder="Digite seu nome aqui..."><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required placeholder="Digite seu e-mail aqui..."><br>
+        <label for="descricao">Descrição</label>
+        <textarea name="sobre" id="descricao" cols="30" rows="10"></textarea><br>
+        <label for="modulo">Módulo</label>
+        <select name="modulo" id="modulo" required>
+            <option value=""></option>
+            <option value="primeiro">Primeiro</option>
+            <option value="segundo">Segundo</option>
+            <option value="terceiro">Terceiro</option>
+            <option value="quarto">Quarto</option>
+        </select><br>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" maxlength="8" required><br>
+        <label for="confirmarsenha">Confirmar Senha</label>
+        <input type="password" id="confirmarsenha" maxlength="8" required><br>
+        <p>Desenha receber novidades em seu e-mail?</p>
+        <label for="recebernovidades">Sim</label>
+        <input type="radio" name="novidades" id="recebernovidades">
+        <label for="senha">Não</label>
+        <input type="radio" name="novidades" id="recebernovidades"><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
