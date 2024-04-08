@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+.conteudo {
+    width: auto;
+    height: 120px;
+    background-color: #0000ffbf;
+    color: white;
+    padding-left: 10px;
+    padding-top: 0.1px;
+    padding-bottom: 14px;
+}
+
+.rodape {
+    width: auto;
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+}
+
+li {
+    text-decoration: underline;
+}
