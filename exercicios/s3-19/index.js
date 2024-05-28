@@ -78,8 +78,21 @@ alert(numeroCDUStringReverse);
 
 // Exercício 7
 let numeroDaConta = parseInt(prompt("Digite seu número da conta corrente:"));
-let numeroDaContaString = numeroDaConta.toString();
-let numeroCDUReverse = numeroDaContaString.split("").reverse().join("");
-let somaDeleMesmoEInverso = numeroDaConta + numeroCDUReverse;
-
-// Falta terminar o restinho do Exercício 7
+let numeroDaContaString = String(numeroDaConta);
+let numeroDaContaReverseString = numeroDaContaString
+  .split("")
+  .reverse()
+  .join("");
+let numeroDaContaReverse = Number(numeroDaContaReverseString);
+let somaDeleMesmoEInverso = numeroDaConta + numeroDaContaReverse;
+let somaDeleMesmoEInversoString = String(somaDeleMesmoEInverso);
+let primeiroNumeroDaSoma1 = Number(somaDeleMesmoEInversoString.charAt(0));
+let primeiroNumeroDaSoma2 = Number(somaDeleMesmoEInversoString.charAt(1));
+let primeiroNumeroDaSoma3 = Number(somaDeleMesmoEInversoString.charAt(2));
+let multiplicação =
+  primeiroNumeroDaSoma1 * 1 +
+  primeiroNumeroDaSoma2 * 2 +
+  primeiroNumeroDaSoma3 * 3;
+let multiplicaçãoString = multiplicação.toString();
+let resultadoFinal = multiplicaçãoString.charAt(1);
+alert(`O digito verificador de sua conta é: ${resultadoFinal}`);
