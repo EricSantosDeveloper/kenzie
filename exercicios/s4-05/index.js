@@ -1,19 +1,19 @@
-// // Exercício 1
-// function somarDoisValores(valor1, valor2) {
-//   let resultadoDaSoma = valor1 + valor2;
-//   return resultadoDaSoma;
-// }
+// Exercício 1
+function somarDoisValores(valor1, valor2) {
+  let resultadoDaSoma = valor1 + valor2;
+  return resultadoDaSoma;
+}
 
-// console.log(somarDoisValores(15, 876));
+console.log(somarDoisValores(15, 876));
 
-// // Exercício 2
-// function valorETipo(x) {
-//   let tipoDoValor = typeof x;
-//   return tipoDoValor;
-// }
+// Exercício 2
+function valorETipo(x) {
+  let tipoDoValor = typeof x;
+  return tipoDoValor;
+}
 
-// let x = false;
-// console.log(`O valor ${x} é do tipo ${valorETipo(x)}.`);
+let x = false;
+console.log(`O valor ${x} é do tipo ${valorETipo(x)}.`);
 
 // Exercício 3
 function somaDosBimestres(nota1, nota2, nota3, nota4) {
