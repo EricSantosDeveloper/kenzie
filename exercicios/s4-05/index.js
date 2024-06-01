@@ -21,21 +21,14 @@ function somaDosBimestres(nota1, nota2, nota3, nota4) {
   return somarNotas;
 }
 
-alert("Bem vindo a calculadora focada na soma de suas notas!");
+alert("Bem vindo à calculadora focada na soma de suas notas!");
 let nota1 = parseInt(prompt("Digite a primeira nota:"));
 let nota2 = parseInt(prompt("Digite a segunda nota:"));
 let nota3 = parseInt(prompt("Digite a terceira nota:"));
 let nota4 = parseInt(prompt("Digite a quarta nota:"));
 
-if (
-  nota1 === typeof Number &&
-  nota2 === typeof Number &&
-  nota3 === typeof Number &&
-  nota4 === typeof Number
-) {
+if (!isNaN(nota1) && !isNaN(nota2) && !isNaN(nota3) && !isNaN(nota4)) {
   alert(`O Resultado é ${somaDosBimestres(nota1, nota2, nota3, nota4)}`);
 } else {
   alert("O campo só pode receber números.");
 }
-
-// Falta terminar
